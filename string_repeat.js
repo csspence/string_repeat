@@ -5,6 +5,11 @@ repeatStr(6, "I") // "IIIIII"
 repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
 */
 
-function repeatStr (n, s) {
-  return '';
+const repeatStr = (n, s) => {
+  let str = '';
+  for(let i = 0; i < n; i++) {
+    str += s;
+  }
+
+  return str;
 }
